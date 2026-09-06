@@ -153,7 +153,7 @@
 
               <!-- - - - - - - - - - - - - end Navigation - - - - - - - - - - - - - - - -->
 
-              <a href="#" class="btn btn-style-6 btn-big">Donate</a>
+              <a href="#" class="btn btn-style-6 btn-big" onclick="doDonate()">Donate</a>
 
             </div>
 
@@ -267,7 +267,13 @@
 
     </div>
 
-    <!-- - - - - - - - - - - - - end Content - - - - - - - - - - - - - - - -->
+   <!-- - - - - - - - - - - - - end Content - - - - - - - - - - - - - - - -->
+<form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top" id="pdonate">
+<input type="hidden" name="cmd" value="_s-xclick">
+<input type="hidden" name="encrypted" value="-----BEGIN PKCS7-----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-----END PKCS7-----
+">
+<img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
+</form>
 
    <!-- - - - - - - - - - - - - - Footer - - - - - - - - - - - - - - - - -->
 
@@ -286,7 +292,7 @@
               </div>
 
             </div>
-            <a href="#" class="col-md-4">
+            <a href="#" class="col-md-4" onclick="doDonate()">
               
               <div class="bg-col-2">
                 <div class="align-center">
@@ -403,7 +409,12 @@
   ============================================ -->
   <script src="js/plugins.js"></script>
   <script src="js/script.js"></script>
-  
+  <script>
+	function doDonate(){
+		var $form = document.getElementById('pdonate');
+		$form.submit();
+	}
+  </script>
 </body>
 
 <!-- Mirrored from velikorodnov.com/html/candidate-pro/media_video_gallery.html by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 26 Mar 2018 18:23:58 GMT -->
